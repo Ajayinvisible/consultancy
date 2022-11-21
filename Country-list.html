@@ -1,0 +1,1045 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Country</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+	<link rel="icon" href="images/logo-2.png">
+    <link rel="stylesheet" href="wowcss-js/animate.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <!-- header start -->
+	<header class="fixed-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-6 md">
+					<div class="logo">
+						<a href="Index.html"><img src="images/logo.png" height="50px"></a>
+					</div>
+				</div>
+				<div class="col-lg-6 search">
+					<div class="header-search">
+						<form>
+							<select class="input-select" name="select1" id="select1">
+							    <option value="countries">Countries</option>
+							    <option value="consultancy">Consultancy</option>
+							    <option value="courses">Courses</option>
+							    <option value="university">University</option>
+							  </select>
+							  <select class="select" name="select2" id="select2">
+							  	<option value="countries">Where do you want to study</option>
+							    <option value="countries">China</option>
+							    <option value="countries">Germany</option>
+							    <option value="countries">Austrila</option>
+							    <option value="countries">Canada</option>
+							    <option value="countries">UK</option>
+							    <option value="countries">USA</option>
+							    <option value="countries">New Zealand</option>
+							    <option value="countries">France</option>
+							    <option value="countries">India<option>
+							    <option value="countries">Spain</option>
+							    <option value="consultancy">KICE</option>
+							    <option value="consultancy">kssj</option>
+							    <option value="courses">ITELS</option>
+							    <option value="courses">PTE</option>
+							    <option value="university"></option>
+							</select>
+							<button class="btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+						</form>
+					</div>
+				</div>
+				<div class="col-lg-3 col-sm-3 md">
+					<div class="login">
+						<ul>
+							<li><button type="button" class="btn d-table" data-bs-toggle="modal" data-bs-target="#ModalForm"><i class="fa-solid fa-arrow-right-to-bracket"></i> Login</button></li>
+							<li><a href="#" class="btn"><i class="fa-solid fa-user-pen"></i> Register</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<!-- header close -->
+
+	<!-- login model start -->
+	<div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+              <!-- Login Form -->
+              <form action="">
+                <div class="modal-header">
+                  <h5 class="modal-title">Modal Login Form</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <div class="mb-3">
+                      <label for="Username">Username<span class="text-danger">*</span></label>
+                      <input type="text" name="username" class="form-control" id="Username" placeholder="Enter Username">
+                  </div>
+      
+                  <div class="mb-3">
+                      <label for="Password">Password<span class="text-danger">*</span></label>
+                      <input type="password" name="password" class="form-control" id="Password" placeholder="Enter Password">
+                  </div>
+                  <div class="mb-3">
+                      <input class="form-check-input" type="checkbox" value="" id="remember" required>
+                      <label class="form-check-label" for="remember">Remember Me</label>
+                      <a href="#" class="float-end">Forgot Password</a>
+                  </div>
+                </div>
+                <div class="modal-footer pt-4">                  
+                  <button type="button" class="btn btn-success mx-auto w-100">Login</button>
+                </div>
+                <p class="text-center">Not yet account, <a href="#">Signup</a></p> 
+            </form>
+          </div>
+        </div>
+    </div>
+	<!-- login moddel close -->
+
+	<!-- navigation start -->
+	<nav class="navbar navbar-expand-lg position-sticky">
+		<div class="container">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="Index.html"><i class="fa-sharp fa-solid fa-house"></i></a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">About Us</a>
+					</li>
+					<li class="nav-item dropdown has-megamenu">
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Countries</a>
+						<div class="dropdown-menu megamenu" role="menu" data-bs-popper="none">
+							<div class="row g-3">
+								<div class="col-lg-3 col-6">
+									<div class="col-megamenu">
+										<ul class="list-unstyled">
+											<li>
+												<div class="row">
+													<div class="col-4">
+														<a href="#"><img class="country" src="images/usa.jpg" height="60px"></a>
+													</div>
+													<div class="col">
+														<a href="#"><h4>USA</h4></a>
+														<a href="#">Read More</a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-4">
+														<a href="#"><img class="country" src="images/aus.jpg" height="60px"></a>
+													</div>
+													<div class="col">
+														<a href="#"><h4>Australa</h4></a>
+														<a href="#">Read More</a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-4">
+														<a href="#"><img class="country" src="images/china.jpg" height="60px"></a>
+													</div>
+													<div class="col">
+														<a href="#"><h4>China</h4></a>
+														<a href="#">Read More</a>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3 col-6">
+									<div class="col-megamenu">
+										<ul class="list-unstyled">
+											<li>
+												<div class="row">
+													<div class="col-4">
+														<a href="#"><img class="country" src="images/usa.jpg" height="60px"></a>
+													</div>
+													<div class="col">
+														<a href="#"><h4>USA</h4></a>
+														<a href="#">Read More</a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-4">
+														<a href="#"><img class="country" src="images/aus.jpg" height="60px"></a>
+													</div>
+													<div class="col">
+														<a href="#"><h4>Austrila</h4></a>
+														<a href="#">Read More</a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-4">
+														<a href="#"><img class="country" src="images/china.jpg" height="60px"></a>
+													</div>
+													<div class="col">
+														<a href="#"><h4>China</h4></a>
+														<a href="#">Read More</a>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3 col-6">
+									<div class="col-megamenu">
+										<ul class="list-unstyled">
+											<li>
+												<div class="row">
+													<div class="col-4">
+														<a href="#"><img class="country" src="images/usa.jpg" height="60px"></a>
+													</div>
+													<div class="col">
+														<a href="#"><h4>USA</h4></a>
+														<a href="#">Read More</a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-4">
+														<a href="#"><img class="country" src="images/china.jpg" height="60px"></a>
+													</div>
+													<div class="col">
+														<a href="#"><h4>China</h4></a>
+														<a href="#">Read More</a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-4">
+														<a href="#"><img class="country" src="images/aus.jpg" height="60px"></a>
+													</div>
+													<div class="col">
+														<a href="#"><h4>Austrila</h4></a>
+														<a href="#">Read More</a>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-3 col-6">
+									<div class="col-megamenu">
+										<ul class="list-unstyled">
+											<li>
+												<div class="row">
+													<div class="col-4">
+														<a href="#"><img class="country" src="images/usa.jpg" height="60px"></a>
+													</div>
+													<div class="col">
+														<a href="#"><h4>USA</h4></a>
+														<a href="#">Read More</a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col-4">
+														<a href="#"><img class="country" src="images/aus.jpg" height="60px"></a>
+													</div>
+													<div class="col">
+														<a href="#"><h4>Austrila</h4></a>
+														<a href="#">Read More</a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col">
+														<a href="#">Explore More</a>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>    
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown has-megamenu"> 
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Consultancy</a>
+						<div class="dropdown-menu megamenu" role="menu" data-bs-popper="none">
+							<div class="row g-3">
+								<div class="col-lg-4 col-6">
+									<div class="col-megamenu">
+										<ul class="list-unstyled">
+											<li>
+												<div class="row">
+													<div class="col">
+														<a href="#"><h4>Best Consultancy For Japan</h4></a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col">
+														<a href="#"><h4>Best Consultancy For Australia</h4></a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col">
+														<a href="#"><h4>Best Consultancy For USA</h4></a>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-4 col-6">
+									<div class="col-megamenu">
+										<ul class="list-unstyled">
+											<li>
+												<div class="row">
+													<div class="col">
+														<a href="#"><h4>Best Consultancy For Germany</h4></a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col">
+														<a href="#"><h4>Best Consultancy For UK</h4></a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col">
+														<a href="#"><h4>Best Consultancy For New Zealand</h4></a>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-4 col-6">
+									<div class="col-megamenu">
+										<ul class="list-unstyled">
+											<li>
+												<div class="row">
+													<div class="col">
+														<a href="#"><h4>Best Consultancy For China</h4></a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col">
+														<a href="#"><h4>Best Consultancy For Canada</h4></a>
+													</div>
+												</div>
+											</li>
+											<li>
+												<div class="row">
+													<div class="col">
+														<a href="#">Explore More</a>
+													</div>
+												</div>
+											</li>
+										</ul>
+									</div>
+								</div>    
+							</div>
+						</div>
+					</li>
+					<li class="nav-item dropdown">
+						<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+							Test Preparation
+						</a>
+						<ul class="dropdown-menu">
+						  <li><a class="dropdown-item" href="#">ITELS</a></li>
+						  <li><a class="dropdown-item" href="#">PTE</a></li>
+						  <li><a class="dropdown-item" href="#">GMAT</a></li>
+						  <li><a class="dropdown-item" href="#">TOEFL</a></li>
+						  <li><a class="dropdown-item" href="#">SAT</a></li>
+						</ul>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="#">Blog</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" aria-current="page" href="News.html">News</a>
+					</li>
+					<li class="nav-item dropdown has-megamenu">
+						<a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown">Contact Us </a>
+						<div class="dropdown-menu megamenu" role="menu" data-bs-popper="none">
+							<div class="row g-3">
+								<div class="col-lg-4 col-6">
+									<div class="col-megamenu">
+										<h3 class="title">Connect US</h3>
+										<ul class="list-unstyled">
+											<li><a href="#">Facebook</a></li>
+											<li><a href="#">Twitter</a></li>
+											<li><a href="#">Linked In</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-4 col-6">
+									<div class="col-megamenu">
+										<h3 class="title">Get In Touch</h3>
+										<ul class="list-unstyled">
+											<li><a href="#">Address : Putalisadak, Kathmandu</a></li>
+											<li><a href="#">Email : info@consultancynepal.com</a></li>
+											<li><a href="#">Phone: +977-1-4240390</a></li>
+										</ul>
+									</div>
+								</div>
+								<div class="col-lg-4 col-6">
+									<div class="col-megamenu">
+										<img class="country" src="images/edu.png" width="100%">
+									</div>
+								</div>    
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</nav>
+	<!-- navigation close -->
+
+	<!-- mobile offcanvass nav start-->
+	<nav class="navbar fixed-top mobile">
+		<div class="container-fluid">
+		  <a class="navbar-brand" href="Index.html"><img src="images/logo.png" width="100%" height="60px" alt=""></a>
+		  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+		  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+			<div class="offcanvas-header">
+			  <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Consultancy Nepal</h5>
+			  <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+			  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+				<li class="nav-item">
+				  <a class="nav-link active" aria-current="page" href="#">About Us</a>
+				</li>
+				<li class="nav-item">
+				  <a class="nav-link" href="#">Countries</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Consultancy</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Consultancy</a>
+				</li>
+				<li class="nav-item dropdown">
+				  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					Test Preparation
+				  </a>
+				  <ul class="dropdown-menu dropdown-menu-dark">
+					<li><a class="dropdown-item" href="#">ITELS</a></li>
+					<li><a class="dropdown-item" href="#">PTE</a></li>
+					<li><a class="dropdown-item" href="#">GMAT</a></li>
+					<li><a class="dropdown-item" href="#">TOEFL</a></li>
+					<li><a class="dropdown-item" href="#">SAT</a></li>
+				  </ul>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="#">Blog</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="News.html">News</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Contact Us
+					</a>
+					<ul class="dropdown-menu dropdown-menu-dark">
+					  <li><a class="dropdown-item" href="#">Phone: +977-1-4240390</a></li>
+					  <li><a class="dropdown-item" href="#">Email: info@consultancynepal.com</a></li>
+					  <li><a class="dropdown-item" href="#">Address: Putalisadak, Kathmandu</a></li>
+					  <li><a class="dropdown-item" href="#">Facebook</a></li>
+					  <li><a class="dropdown-item" href="#">Twitter</a></li>
+					  <li><a class="dropdown-item" href="#">Linked In</a></li>
+					</ul>
+				  </li>
+			  </ul>
+			</div>
+		  </div>
+		</div>
+	</nav>
+	<!-- mobile offcanvass nav close-->
+
+	<!-- breadcrumb start -->
+	<nav class="breadcrumb bg">
+		<div class="container">
+			<ol class="breadcrumb">
+		  		<li class="breadcrumb-item"><a href="Index.html"><i class="fa-solid fa-house"></i></a></li>
+		  		<li class="breadcrumb-item active" aria-current="page">Country</li>
+			</ol>
+		</div>
+	</nav>
+    <!-- Offcanvas form start -->
+	<section class="offcanvas-form">
+		<div id="mySidenav" class="sidenav">
+			<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+			<form>
+				<h3>Contact Us</h3>
+					<span class="error username-error"></span>
+					<input type="text" name="your-name" id="name" placeholder="Full Name" autocomplete="off" required>
+					<span class="error email-error"></span>
+					<input type="email" name="your-email" id="email" autocomplete="off" placeholder="Your E-mail" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" title="email invaild">
+					<span class="error phone-error"></span>
+					<input type="tel" name="your-phone" id="phone" autocomplete="off" placeholder="Your Number" required pattern="[+]*[(]{0,1}[0-9]{1,3}[)]{0,1}[-\s\./0-9]*$">
+					<span class="error subject-error"></span>
+					<input type="text" name="your-subject" id="subject" autocomplete="off" placeholder="Subject" required>
+					<span class="error message-error"></span>
+					<textarea name="your-message" rows="3" id="message" autocomplete="off" placeholder="Message"></textarea>
+				<button type="submit" class="btn btn-primary" id="contact-form">Send Now</button>
+			</form>
+		  </div>
+		  <div id="main" class="contact">
+			<span style="font-size:20px;cursor:pointer;font-weight:700;" onclick="openNav()"> Contact Us</span>
+		  </div>
+	</section>
+	<script>
+		function openNav() {
+		  document.getElementById("mySidenav").style.width = "350px";
+		  document.getElementById("main").style.marginRight = "350px";
+		}
+	
+		function closeNav() {
+		  document.getElementById("mySidenav").style.width = "0";
+		  document.getElementById("main").style.marginRight = "0";
+		}
+	</script>
+	<!-- offcanvass close -->
+
+    <!-- offcanvss events start -->
+	<button class="btn btn-primary events" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Comming Events</button>	
+	<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
+		<div class="container">
+			<div class="offcanvas-header">
+				<h4 id="offcanvasTopLabel">Events</h4>
+				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+			</div>
+			<div class="offcanvas-body">
+				<div class="row mySlider">
+					<div class="col-lg-3">
+						<div class="off-events">
+							<div class="image">
+								<img src="images/2.webp" width="100%" alt="">
+							</div>	
+							<div class="off-text">
+								<h5>Hello World</h5>
+								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur impedit eligendi </p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="off-events">
+							<div class="image">
+								<img src="images/4.webp" width="100%" alt="">
+							</div>	
+							<div class="off-text">
+								<h5>Hello World</h5>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="off-events">
+							<div class="image">
+								<img src="images/5.webp" width="100%" alt="">
+							</div>	
+							<div class="off-text">
+								<h5>Hello World</h5>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-3">
+						<div class="off-events">
+							<div class="image">
+								<img src="images/3.webp" width="100%" alt="">
+							</div>	
+							<div class="off-text">
+								<h5>Hello World</h5>
+								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- offcanvss events close -->
+    <div class="country-wrap">
+        <section class="country mt-5 mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/china.webp" width="100%" alt="">
+                        </div>
+                        <div class="country-content">
+                            <div class="country-title">
+                                <a href="#"><h4>China</h4></a>
+                            </div>
+                            <p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/usa.jpg" width="100%" alt="">
+                        </div>
+                        <div class="country-content">
+                            <div class="country-title">
+                                <a href="#"><h4>USA</h4></a>
+                            </div>
+                            <p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/uk.webp" width="100%" alt="">
+                        </div>
+                        <div class="country-content">
+                            <div class="country-title">
+                                <a href="#"><h4>UK</h4></a>
+                            </div>
+                            <p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="country mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/china.webp" width="100%" alt="">
+                        </div>
+                        <div class="country-content">
+                            <div class="country-title">
+                                <a href="#"><h4>China</h4></a>
+                            </div>
+                            <p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/usa.jpg" width="100%" alt="">
+                        </div>
+                        <div class="country-content">
+                            <div class="country-title">
+                                <a href="#"><h4>USA</h4></a>
+                            </div>
+                            <p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/uk.webp" width="100%" alt="">
+                        </div>
+                        <div class="country-content">
+                            <div class="country-title">
+                                <a href="#"><h4>UK</h4></a>
+                            </div>
+                            <p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="country mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/china.webp" width="100%" alt="">
+                        </div>
+                        <div class="country-content">
+                            <div class="country-title">
+                                <a href="#"><h4>China</h4></a>
+                            </div>
+                            <p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/usa.jpg" width="100%" alt="">
+                        </div>
+                        <div class="country-content">
+                            <div class="country-title">
+                                <a href="#"><h4>USA</h4></a>
+                            </div>
+                            <p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/uk.webp" width="100%" alt="">
+                        </div>
+                        <div class="country-content">
+                            <div class="country-title">
+                                <a href="#"><h4>UK</h4></a>
+                            </div>
+                            <p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+        <section class="country mb-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/china.webp" width="100%" alt="">
+                        </div>
+                        <div class="country-content">
+                            <div class="country-title">
+                                <a href="#"><h4>China</h4></a>
+                            </div>
+                            <p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/usa.jpg" width="100%" alt="">
+                        </div>
+                        <div class="country-content">
+                            <div class="country-title">
+                                <a href="#"><h4>USA</h4></a>
+                            </div>
+                            <p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="box">
+                        <div class="image">
+                            <img src="images/uk.webp" width="100%" alt="">
+                        </div>
+                        <div class="country-content">
+                            <div class="country-title">
+                                <a href="#"><h4>UK</h4></a>
+                            </div>
+                            <p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+                            <a href="#" class="btn">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </section>
+		<section class="country mb-5">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="box">
+							<div class="image">
+								<img src="images/china.webp" width="100%" alt="">
+							</div>
+							<div class="country-content">
+								<div class="country-title">
+									<a href="#"><h4>China</h4></a>
+								</div>
+								<p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+								<a href="#" class="btn">Read More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="box">
+							<div class="image">
+								<img src="images/usa.jpg" width="100%" alt="">
+							</div>
+							<div class="country-content">
+								<div class="country-title">
+									<a href="#"><h4>USA</h4></a>
+								</div>
+								<p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+								<a href="#" class="btn">Read More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="box">
+							<div class="image">
+								<img src="images/uk.webp" width="100%" alt="">
+							</div>
+							<div class="country-content">
+								<div class="country-title">
+									<a href="#"><h4>UK</h4></a>
+								</div>
+								<p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+								<a href="#" class="btn">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="country mb-5">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="box">
+							<div class="image">
+								<img src="images/china.webp" width="100%" alt="">
+							</div>
+							<div class="country-content">
+								<div class="country-title">
+									<a href="#"><h4>China</h4></a>
+								</div>
+								<p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+								<a href="#" class="btn">Read More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="box">
+							<div class="image">
+								<img src="images/usa.jpg" width="100%" alt="">
+							</div>
+							<div class="country-content">
+								<div class="country-title">
+									<a href="#"><h4>USA</h4></a>
+								</div>
+								<p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+								<a href="#" class="btn">Read More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="box">
+							<div class="image">
+								<img src="images/uk.webp" width="100%" alt="">
+							</div>
+							<div class="country-content">
+								<div class="country-title">
+									<a href="#"><h4>UK</h4></a>
+								</div>
+								<p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+								<a href="#" class="btn">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="country mb-5">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="box">
+							<div class="image">
+								<img src="images/china.webp" width="100%" alt="">
+							</div>
+							<div class="country-content">
+								<div class="country-title">
+									<a href="#"><h4>China</h4></a>
+								</div>
+								<p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+								<a href="#" class="btn">Read More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="box">
+							<div class="image">
+								<img src="images/usa.jpg" width="100%" alt="">
+							</div>
+							<div class="country-content">
+								<div class="country-title">
+									<a href="#"><h4>USA</h4></a>
+								</div>
+								<p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+								<a href="#" class="btn">Read More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="box">
+							<div class="image">
+								<img src="images/uk.webp" width="100%" alt="">
+							</div>
+							<div class="country-content">
+								<div class="country-title">
+									<a href="#"><h4>UK</h4></a>
+								</div>
+								<p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+								<a href="#" class="btn">Read More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="country mb-5">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<div class="box">
+							<div class="image">
+								<img src="images/china.webp" width="100%" alt="">
+							</div>
+							<div class="country-content">
+								<div class="country-title">
+									<a href="#"><h4>China</h4></a>
+								</div>
+								<p>If you are seeking expert-based advice and migration solutions to study among top-ranking Colleges in the United Kingdom as students we have handpicked a few names which specialize in UK higher education.</p>
+								<a href="#" class="btn">Read More</a>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						
+					</div>
+					<div class="col">
+						
+					</div>
+				</div>
+			</div>
+		</section>
+    </div>
+
+    <!-- footer start -->
+	<footer>
+		<div class="container">
+			<div class="footer-main">
+				<div class="row">
+					<div class="col-lg col-sm-6">
+						<h3>Study Destinations</h3>
+						<ul>
+							<li><a href="#" class="pad-left"><i class="fa-solid fa-angles-right"></i> &nbsp;Study In Australia</a></li>
+							<li><a href="#" class="pad-left"><i class="fa-solid fa-angles-right"></i> &nbsp;Study In Canada</a></li>
+							<li><a href="#" class="pad-left"><i class="fa-solid fa-angles-right"></i> &nbsp;Study In USA</a></li>
+							<li><a href="#" class="pad-left"><i class="fa-solid fa-angles-right"></i> &nbsp;Study In UK</a></li>
+						</ul>
+						<p class="mt-5">We will help to guide you the right consultancy for your abroad studies</p>
+						<div class="social-media">
+							<ul>
+								<li class="social"><a href="#" class="icon fb"></a></li>
+								<li class="social"><a href="#" class="icon twitter"></a></li>
+								<li class="social"><a href="#" class="icon linkedin"></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-lg col-sm-6">
+						<h3>Test Preparation</h3>
+						<ul>
+							<li><a href="#" class="pad-left"><i class="fa-solid fa-angles-right"></i> &nbsp;ITELS</a></li>
+							<li><a href="#" class="pad-left"><i class="fa-solid fa-angles-right"></i> &nbsp;GMAT</a></li>
+							<li><a href="#" class="pad-left"><i class="fa-solid fa-angles-right"></i> &nbsp;PTE</a></li>
+							<li><a href="#" class="pad-left"><i class="fa-solid fa-angles-right"></i> &nbsp;SAT</a></li>
+						</ul>
+					</div>
+					<div class="col-lg col-sm-6">
+						<h3>Tags</h3>
+						<ul>
+							<li><a href="#" class="pad-left"><i class="fa-solid fa-angles-right"></i> &nbsp;Explore Consultancy</a></li>
+							<li><a href="#" class="pad-left"><i class="fa-solid fa-angles-right"></i> &nbsp;Explore Countries</a></li>
+							<li><a href="#" class="pad-left"><i class="fa-solid fa-angles-right"></i> &nbsp;Find Universities</a></li>
+							<li><a href="#" class="pad-left"><i class="fa-solid fa-angles-right"></i> &nbsp;Study Abroad FAQ</a></li>
+							<li><a href="#" class="pad-left"><i class="fa-solid fa-angles-right"></i> &nbsp;International Study Guide</a></li>
+						</ul>
+					</div>
+					<div class="col-lg col-sm-6">
+						<h3>Contact Info</h3>
+						<ul>
+							<li><i class="fa-solid fa-location-dot"></i>  &nbsp;Putalisadak, Kathmandu</li>
+							<li><a href="#" class="pad-left"><i class="fa-solid fa-phone"></i>  &nbsp;+977-1-4240390</a></li>
+							<li><a href="#" class="pad-left"><i class="fa-solid fa-envelope"></i>  &nbsp;info@consultancynepal.com</a></li>
+						</ul>
+					</div>
+					<div class="footer-bottom">
+						<div class="footer-links">
+							<ul>
+								<li><a href="#">About Us</a></li>
+								<li><a href="#">Contact Us</a></li>
+								<li><a href="#">Country List</a></li>
+								<li><a href="#">News</a></li>
+								<li><a href="#">Blog</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+    <a href="#" class="to-top"><i class="fa fa-chevron-up"></i></a>
+	<!-- footer close -->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+    <!-- wow js start -->
+    <script src="wowcss-js/wow.min.js"></script>
+     <script>
+      new WOW().init();
+    </script>
+    <!-- wow js close -->
+    <!-- scroll to top start -->
+    <script>            
+      var duration = 500;
+      $(window).scroll(function() {
+          if ($(this).scrollTop() > 200) {
+          $('.to-top').fadeIn(duration);
+          } else {
+          $('.to-top').fadeOut(duration);
+          }
+      });
+      
+      $('.to-top').click(function(event) {
+          event.preventDefault();
+          $('html').animate({scrollTop: 0}, duration);
+          return false;
+      })
+    </script>	
+    <!-- scroll to top close -->
+
+</body>
+</html>
