@@ -2,6 +2,7 @@
 
 *{
 	font-family: 'lato', sans-serif;
+	letter-spacing: 1px;
 }
 body{
 	overflow-x: hidden;
@@ -12,15 +13,15 @@ p{
 }
 .feature h3, .study h3, .courses,.test h3, .news h3,
 .articles h4,.articles h5,.pop-events h5{
-	color: #000080;
+	color: #000000;
 }
 .fixed-top{
 	z-index: 99;
 }
 /* header */
 header{
-	background: #000080;
-	padding: 5px 0;
+    background: linear-gradient(0deg, #fe8214, #ffe84e);
+    padding: 5px 0;
 }
 header .logo img{
 	max-width: 100%;
@@ -60,7 +61,7 @@ header .header-search form .select{
 }
 header .header-search form .btn{
 	border-radius: 0 5px 5px 0;
-    margin-top: -2px;
+    margin-top: -4px;
     width: 10%;
     background: #caf0f8;
     color: #1d3557;
@@ -93,21 +94,20 @@ header .header-search form .btn:hover{
 /* navbar start */
 .navbar{
 	z-index: 99;
-	background: #cacaff;
+	background: #fe8214;
 	top: 68px;
 	margin-top: 68px;
 	padding: 0;
   }
   .navbar .navbar-nav .nav-link{
-	color: #000;
-	text-transform: uppercase;
+	color: #ffffff;
+	text-transform: capitalize;
 	font-size: 15px;
-	font-weight: bold;
 	text-align: center;
 	padding: 15px 0;
   }
   .nav-item{
-	padding: 0 25px;
+	padding: 0 10px;
   }
   .megamenu .nav,.megamenu .collapse,.megamenu .dropup,.megamenu .dropdown {
 	position: static;
@@ -139,7 +139,7 @@ header .header-search form .btn:hover{
 	right: 0;
   }
   .dropdown-menu{
-	background: #000080;
+	background: #fe8214;
   }
   .dropdown-menu ul li a,.dropdown .dropdown-menu .dropdown-item{
 	color: white;
@@ -176,7 +176,7 @@ header .header-search form .btn:hover{
 	z-index: 999;
 	top: 0;
 	right: 0;
-	background-color: #003594;
+	background-color: #fe9d47;
 	overflow-x: hidden;
 	transition: 0.5s;
 	padding-top: 60px;
@@ -184,7 +184,7 @@ header .header-search form .btn:hover{
   .contact{
 	float: right;
 	transform: rotate(-90deg);
-	background: #003594;
+	background: #fe8214;
   }
   .offcanvas-form form{
 	margin: 0 20px;
@@ -244,9 +244,9 @@ header .header-search form .btn:hover{
 	top: 250px;
 	border-radius: 20px 20px 0 0;
 	position: fixed;
-	right: -44px;
+	right: -49px;
 	z-index: 999;
-	width: 138px;
+	width: 145px;
   }
   .offcanvas-form #main-events{
 	transition: margin-Right .5s;
@@ -266,18 +266,19 @@ header .header-search form .btn:hover{
     position: fixed;
     z-index: 99;
     top: 450px;
-    right: -65px;
+    right: -66px;
 	transform: rotate(-90deg);
-	background: #003594;
+	background: #fe8214;
 	padding: 10px;
     border-radius: 25px 25px 0 0;
-	font-family: 'Roboto', sans-serif;
+	font-family: 'lato', sans-serif;
 	font-weight: bold;
 	font-size: 20px;
+	border-color: #fe8214;
   }
   .events:hover,.events:focus{
-	border-color: #003594;
-	background-color: #003594;	
+	border-color: #fe8214;
+	background-color: #fe8214;	
   }
   .offcanvas.offcanvas-top{
 	height: fit-content;
@@ -312,12 +313,24 @@ header .header-search form .btn:hover{
   }
   .hero .slick .item .content h2{
 	position: absolute;
-	bottom: 250px;
+	bottom: 300px;
 	font-weight: bold;
-	margin-left: calc(50% - 100px);
+	left: 200px;
+	font-size: 70px;
 	z-index: 9;
 	color: #F8F7F9;
-	text-shadow: 0 0 10px #2b2d42;
+  }
+  .hero .slick .item .content h2 span{
+	color: #fe8214;
+  }
+  .hero .slick .item .content h4{
+	position: absolute;
+	bottom: 250px;
+	font-weight: bold;
+	left: 200px;
+	font-size: 35px;
+	z-index: 9;
+	color: #F8F7F9;
   }
 /* hero-bnner close */
 /* ad block start */
@@ -383,7 +396,7 @@ header .header-search form .btn:hover{
 	content: '';
 	width: 25px;
 	height: 3px;
-	background: #dd0c39;
+	background: #fe8214;
 	position: absolute;
 	bottom: -10px;
 	left: 0;
@@ -397,7 +410,7 @@ header .header-search form .btn:hover{
 }
 .feature h3 span,.study h3 span, .courses h3 span,
 .news h3 span,.articles .pop span, .pop-events .pop span{
-	color: #dd0c39;
+	color: #fe8214;
 }
 /* heading hover css close */
 .fear .slick-prev,.fear .slick-next{
@@ -531,7 +544,8 @@ header .header-search form .btn:hover{
   height: 250px;
   display: flex;
   align-items: center;
-  width: 250px;
+  width: 300px;
+  border-radius: 2px;
   align-content: center;
   flex-direction: column;
   justify-content: center;
@@ -542,6 +556,9 @@ header .header-search form .btn:hover{
 }
 .count-info{
 	margin-top: 10px;
+}
+.live-count .ad .ad-img img{
+	height: 250px;
 }
 /* live-count-css close */
 /* testimonails start */
@@ -565,7 +582,6 @@ header .header-search form .btn:hover{
 	justify-content: space-between;
 	min-height: 460px;
 	margin-top: 70px;
-	overflow: hidden;
 	box-shadow: 10px 20px 30px rgba(0, 0, 0, 0.1);
 	background-color: rgb(237, 237, 237);
 	transition: 0.3s ease;
@@ -619,7 +635,7 @@ header .header-search form .btn:hover{
 	background-color: #dd0c39;
 	position: relative;
 	width: 100%;
-	height: 130px;
+	height: 138px;
 	/* 490 290 */
 	transition: 0.3s ease;
   }
@@ -640,7 +656,7 @@ header .header-search form .btn:hover{
   }
 /* testimonials close */
   
-/* articles-css start */
+/* articles & events -css start */
 .articles{
 	background: #F0EFEF;
 	padding: 50px 0;
@@ -659,6 +675,9 @@ header .header-search form .btn:hover{
 .articles-content img,.events-content img{
 	height: 148px;
     object-fit: cover;
+}
+.articles .ad-box .ad-img img{
+	height: 363px;
 }
 .events-content{
 	box-shadow: 0 0 5px #ccc;
@@ -689,6 +708,9 @@ header .header-search form .btn:hover{
 	display: flex;
 	justify-content: center;
 }
+.pop-events .ad-box .ad-img img{
+	height: 316px;
+}
 /* articles-css close */
 
 /* news start */
@@ -703,9 +725,8 @@ header .header-search form .btn:hover{
 /* news-events close */
 footer{
 	padding: 50px 0;
-	background-image: url(images/wave.svg);
 	background-blend-mode: multiply;
-	background-color: #000080;
+	background: #fe8214;
 	padding-bottom: 30px;
 	color: #ffff;
 }
@@ -742,13 +763,11 @@ footer a:hover i{
 }
 footer .footer-bottom{
 	border-top: 1px solid #fff;
+	display: flex;
+	justify-content: space-between;
 }
-footer .footer-links {
-	padding-left: calc(50% - 270px);
-}
-footer .footer-links li a{
-	float: left;
-	padding: 0 15px;
+footer .footer-bottom .copy,footer .footer-bottom .designed{
+	margin: 10px 0 0 0;
 }
 .footer-main .social-media .social{
 	float: left;
@@ -1381,13 +1400,13 @@ footer .footer-links li a:hover{
 		display: none;
 	}
 	.navbar{
-		background: #003594;
+		background: #fe8214;
 		top: 0;
 		margin-top: 0;
 		width: 425px;
 	}
 	.offcanvas{
-		background-color: #003594;
+		background-color: #fe8214;
 	}
 	.navbar .navbar-nav li a,.navbar .navbar-nav .nav-link{
 		color: white;
@@ -1397,8 +1416,8 @@ footer .footer-links li a:hover{
 	} 
 	header .header-search form .btn{
 		padding: 0;
-		margin-top: 1px;
-		height: 30px;
+		margin-top: -1px;
+		height: 32px;
 	}
 	header .fa-magnifying-glass{
 		font-size: 22px;
