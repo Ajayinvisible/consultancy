@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Best consultancy for UK in Nepal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-	<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 	<link rel="icon" href="images/logo-2.png">
     <link rel="stylesheet" href="wowcss-js/animate.css">
@@ -14,7 +14,7 @@
 </head>
 <body>
     <!-- header start -->
-	<header class="stick-top">
+	<header class="sticky-top">
         <div class="container-fluid">
             <div class="row">
             <div class="col-lg-2 none">
@@ -312,50 +312,12 @@
     </header>
 	<!-- header close -->
 
-	<!-- login model start -->
-	<div class="modal fade" id="ModalForm" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-          <div class="modal-content">
-              <!-- Login Form -->
-              <form action="">
-                <div class="modal-header">
-                  <h5 class="modal-title">Modal Login Form</h5>
-                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                  <div class="mb-3">
-                      <label for="Username">Username<span class="text-danger">*</span></label>
-                      <input type="text" name="username" class="form-control" id="Username" placeholder="Enter Username">
-                  </div>
-      
-                  <div class="mb-3">
-                      <label for="Password">Password<span class="text-danger">*</span></label>
-                      <input type="password" name="password" class="form-control" id="Password" placeholder="Enter Password">
-                  </div>
-                  <div class="mb-3">
-                      <input class="form-check-input" type="checkbox" value="" id="remember" required>
-                      <label class="form-check-label" for="remember">Remember Me</label>
-                      <a href="#" class="float-end">Forgot Password</a>
-                  </div>
-                </div>
-                <div class="modal-footer pt-4">                  
-                  <button type="button" class="btn btn-success mx-auto w-100">Login</button>
-                </div>
-                <p class="text-center">Not yet account, <a href="#">Signup</a></p> 
-            </form>
-          </div>
-        </div>
-    </div>
-	<!-- login moddel close -->
-
-
-
 	<!-- mobile offcanvass nav start-->
 	<nav class="navbar fixed-top mobile">
 		<div class="container-fluid">
 		  <a class="navbar-brand" href="Index.html"><img src="images/logo.png" width="100%" height="60px" alt=""></a>
 		  <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
-			<span class="navbar-toggler-icon"></span>
+			<span class="navbar-toggler-icon"><i class="fas fa-bars" style="color:#fff; font-size:28px;"></i></span>
 		  </button>
 		  <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
 			<div class="offcanvas-header">
@@ -460,66 +422,6 @@
 	</script>
 	<!-- offcanvass close -->
 
-    <!-- offcanvss events start -->
-	<button class="btn btn-primary events" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasTop" aria-controls="offcanvasTop">Comming Events</button>	
-	<div class="offcanvas offcanvas-top" tabindex="-1" id="offcanvasTop" aria-labelledby="offcanvasTopLabel">
-		<div class="container">
-			<div class="offcanvas-header">
-				<h4 id="offcanvasTopLabel">Events</h4>
-				<button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-			</div>
-			<div class="offcanvas-body">
-				<div class="row mySlider">
-					<div class="col-lg-3">
-						<div class="off-events">
-							<div class="image">
-								<img src="images/2.webp" width="100%" alt="">
-							</div>	
-							<div class="off-text">
-								<h5>Hello World</h5>
-								<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequuntur impedit eligendi </p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="off-events">
-							<div class="image">
-								<img src="images/4.webp" width="100%" alt="">
-							</div>	
-							<div class="off-text">
-								<h5>Hello World</h5>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="off-events">
-							<div class="image">
-								<img src="images/5.webp" width="100%" alt="">
-							</div>	
-							<div class="off-text">
-								<h5>Hello World</h5>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-3">
-						<div class="off-events">
-							<div class="image">
-								<img src="images/3.webp" width="100%" alt="">
-							</div>	
-							<div class="off-text">
-								<h5>Hello World</h5>
-								<p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<!-- offcanvss events close -->
-
     <!-- hero banner start -->
     <section class="blog-hero-banner">
         <div class="hero-image">
@@ -569,12 +471,12 @@
                             <h2>Introduction to the United Kingdom</h2>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="blog-inner-dec">
                                     <p>The United Kingdom also known by the name Great Britain is an island Country in the West of Europe. It is surrounded by the water bodies of the Atlantic Ocean, North Sea, English Channel, and the Irish sea. The four states of the UK are England, Scotland, Northern Island, and Wales. The Capital City of the United Kingdom is London. The people of this Country are called the British. The religious beliefs of people are mainly Christianity. The head of the Monarchy of the United Kingdom is Queen Elizabeth second since 6 February 1952. The head of government of the United Kingdom is led by Prime Minister Mr. Boris Johnson.</p>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="blog-inner-image">
                                     <img src="images/uk-banner.jpg" width="100%" alt="">
                                 </div>
@@ -583,12 +485,12 @@
                     </div>
                     <div class="blog-inner-content pt-3 pb-3">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="blog-inner-image">
                                     <img src="images/learn.jpg" class="nd" width="100%" alt="">
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="blog-inner-title">
                                     <h4>Study in the UK:</h4>
                                 </div>
@@ -600,7 +502,7 @@
                     </div>
                     <div class="blog-inner-content pt-3 pb-3">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="blog-inner-title">
                                     <h4>Some academic programs in the UK:</h4>
                                 </div>
@@ -622,7 +524,7 @@
 									</ol>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="blog-inner-image">
                                     <img src="images/clay.jpg" class="rd" width="100%" alt="">
                                 </div>
@@ -631,12 +533,12 @@
                     </div>
 					<div class="blog-inner-content pt-3 pb-3">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="blog-inner-image">
                                     <img src="images/learn.jpg" class="th" width="100%" alt="">
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
 								<div class="blog-inner-dec">
                                     <p>To date after the US, the next most preferred education destination is The United Kingdom. It has world-recognized Colleges and Universities of academic excellence for higher education and also English language education. The education cost in the United Kingdom are also comparatively lower and this attracts the attention of international students including Nepal. The work permits allowed by the Universities and Colleges of the UK are 20 hours a week they offer financial assistance for international students in form of education loans and scholarships as bursaries for the tuition fees of good UK Colleges and Schools.</p>
                                 </div>
@@ -648,15 +550,15 @@
                             <h2>Best consultancies for the UK:</h2>
                         </div>
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
 								<div class="blog-inner-title">
                                     <h4>NIEC</h4>
                                 </div>
                                 <div class="blog-inner-dec">
-                                    <p>Nepal International Education Consultancy is an Education consultancy with a well-trained group of student counselors for abroad studies. It is located on the Fourth floor of the Share market complex in Putalisadak, Kathmandu. At NIEC students get a five-star experience with the services provided in areas of exam preparations such as TOEFL, IELTS, PTE, SAT1, ACT, GRE, and GMAT. They provide directions for students in course selection out of hundreds of Universities, help to make successful applications, provide workshops, help in the VISA Application process, interview preparations, and pre-departure sessions. In the UK, education is categorized as Primary, Secondary, Higher, and further education and academic degrees are from Foundation to Ph.D./  Doctoral/ Research degrees. NIEC has networked with the best Universities such as De Mont Ford University, the University of the West of England, the University of West London, Middlesex University, etc., and makes the admission and enrollment much more systematic and faster with their vast knowledge and years of experience in this field.</p>
+                                    <p>Nepal International Education Consultancy is an Education consultancy with a well-trained group of student counselors for abroad studies. It is located on the Fourth floor of the Share market complex in Putalisadak, Kathmandu. At NIEC students get a five-star experience with the services provided in areas of exam preparations such as TOEFL, IELTS, PTE, SAT1, ACT, GRE, and GMAT. They provide directions for students in course selection out of hundreds of Universities, help to make successful applications, provide workshops, help in the VISA Application process, interview preparations, and pre-departure sessions. In the UK, education is categorized as Primary, Secondary, Higher, and further education and academic degrees are from Foundation to Ph.D./  Doctoral/ Research degrees. NIEC has networked with the best Universities such as De Mont Ford University, the University of the West of England, the University of West London, Middlesex University, etc.</p>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="blog-inner-image">
                                     <img src="images/niec.jpg" class="niec" width="100%" alt="">
                                 </div>
@@ -665,32 +567,32 @@
                     </div>
 					<div class="blog-inner-content pt-3 pb-3">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="blog-inner-image">
                                     <img src="images/himalayan.png" class="himalayan" width="100%" alt="">
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="blog-inner-title">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="blog-inner-title mt-4">
                                     <h4>Himalayan White House Education Consultancy</h4>
                                 </div>
                                 <div class="blog-inner-dec">
-                                    <p>Himalayan White House Education Consultancy is a great platform for abroad studies and also for studying in The United Kingdom. Well renowned education system in the U.K. is offered World Class education and the best Universities. It has multi-cultural people and for international students, the United Kingdom offers flexible and short-duration programs along with wide choices of courses and institutions. UK Colleges also provide two years of post-study work for international undergraduate and post-graduate students. Along with this they also have bursaries and aids for international students. Himalayan White House does free-cost applications, their counselors provide directions and information for VISA requirements. They also assist in making income certificates and sponsor letters and help in the preparation of financial documents for students of Nepal to study in the U.K.</p>
+                                    <p>Himalayan White House Education Consultancy is a great platform for abroad studies and also for studying in The United Kingdom. Well renowned education system in the U.K. is offered World Class education and the best Universities. It has multi-cultural people and for international students, the United Kingdom offers flexible and short-duration programs along with wide choices of courses and institutions. UK Colleges also provide two years of post-study work for international undergraduate and post-graduate students. Along with this they also have bursaries and aids for international students. Himalayan White House does free-cost applications, their counselors provide directions and information for VISA requirements.</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 					<div class="blog-inner-content pt-3 pb-3">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="blog-inner-title">
                                     <h4>Ed Wise foundation</h4>
                                 </div>
                                 <div class="blog-inner-dec">
-                                    <p>Edwise Foundation is the first accredited agency of Nepal and ICEF screened agency. At Edwise all counseling and documents are handled by experienced teams. They are experts in IELTS preparation and conduct free mock tests, feedback, and review sessions for students to score high and obtain scholarships. Edwise also helps in tier 4 VISA processing. Also in the UK for two years, Post study work permits are open for international students and some programs do offer industrial placements. Therefore Ed Wise ensures that students reap all the benefits which are made open. In the UK there are four out of the Top 10 best Universities in the World. Besides this pre-departure briefings and on-arrival accommodations are managed by the Foundation for Nepalese students who choose Edwise as their steppingstone for studies abroad.</p>
+                                    <p>Edwise Foundation is the first accredited agency of Nepal and ICEF screened agency. At Edwise all counseling and documents are handled by experienced teams. They are experts in IELTS preparation and conduct free mock tests, feedback, and review sessions for students to score high and obtain scholarships. Edwise also helps in tier 4 VISA processing. Also in the UK for two years, Post study work permits are open for international students and some programs do offer industrial placements. Therefore Ed Wise ensures that students reap all the benefits which are made open. In the UK there are four out of the Top 10 best Universities in the World. Besides this pre-departure briefings and on-arrival accommodations are managed by the Foundation for Nepalese students who choose</p>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="blog-inner-image">
                                     <img src="images/edwise.jpg" class="edwise" width="100%" alt="">
                                 </div>
@@ -699,32 +601,32 @@
                     </div>
 					<div class="blog-inner-content pt-3 pb-3">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="blog-inner-image">
                                     <img src="images/rightpath.jpg" class="rightpath" width="100%" alt="">
                                 </div>
                             </div>
-                            <div class="col-lg-6">
-                                <div class="blog-inner-title">
+                            <div class="col-lg-6 col-md-6">
+                                <div class="blog-inner-title mt-4">
                                     <h4>Right Path</h4>
                                 </div>
                                 <div class="blog-inner-dec">
-                                    <p>Right Path Career Counselling is a multi-dimensional education consultancy operating in Nepal. It helps students in studies abroad, career counseling, test preparations, and travel assistance. Studies in the United Kingdom are possible with this organization for Nepalese students. In the UK one can study higher National Diploma, Diploma of Higher Education, Undergraduate, postgraduate, Ph.D., and vocational courses. It has the finest research and as well as teaching faculties. Research in the Medical field is also very effective for international students in this field. Right Path is the Number 1 IELTS institute for test preparations. They also give advice through career counseling, VISA and documentation guidance, Application review and submission, interview preparation and travel assistance, and pre-departure briefings to their students before leaving for designated Colleges and Cities in the UK.</p>
+                                    <p>Right Path Career Counselling is a multi-dimensional education consultancy operating in Nepal. It helps students in studies abroad, career counseling, test preparations, and travel assistance. Studies in the United Kingdom are possible with this organization for Nepalese students. In the UK one can study higher National Diploma, Diploma of Higher Education, Undergraduate, postgraduate, Ph.D., and vocational courses. It has the finest research and as well as teaching faculties. Research in the Medical field is also very effective for international students in this field. Right Path is the Number 1 IELTS institute for test preparations. They also give advice through career counseling, VISA and documentation guidance, Application review and submission</p>
                                 </div>
                             </div>
                         </div>
                     </div>
 					<div class="blog-inner-content pt-3 pb-3">
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="blog-inner-title">
                                     <h4>Bradford Education Consultancy</h4>
                                 </div>
                                 <div class="blog-inner-dec">
-                                    <p>Bradford Education Consultancy is a global education consultancy in New Baneshwor Kathmandu. They offer personalized services for students through counseling and support such as University search applications, test classes and registration, Visa Supporting documentation, VISA interview, travel arrangements, Airport pick up, and accommodations. They help to lodge scholarships at Colleges in the UK based on students’ academic performance and their test scores. Students arriving in the UK through Bradford are in a network of services and advice to make them integrated and students can work part-time 20 hours per week while studying their desired course at lower tuition fees at Colleges in the United Kingdom.</p>
+                                    <p>Bradford Education Consultancy is a global education consultancy in New Baneshwor Kathmandu. They offer personalized services for students through counseling and support such as University search applications, test classes and registration, Visa Supporting documentation, VISA interview, travel arrangements, Airport pick up, and accommodations. They help to lodge scholarships at Colleges in the UK based on students’ academic performance and their test scores. Students arriving in the UK through Bradford are in a network of services and advice to make them integrated and students can work part-time 20 hours per week while studying their desired</p>
                                 </div>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-6 col-md-6">
                                 <div class="blog-inner-image">
                                     <img src="images/bradford.jpg" class="bradford" width="100%" alt="">
                                 </div>
@@ -814,17 +716,6 @@
 							<li><a href="#" class="pad-left"><i class="fa-solid fa-phone"></i>  &nbsp;+977-1-4240390</a></li>
 							<li><a href="#" class="pad-left"><i class="fa-solid fa-envelope"></i>  &nbsp;info@consultancynepal.com</a></li>
 						</ul>
-					</div>
-					<div class="footer-bottom">
-						<div class="footer-links">
-							<ul>
-								<li><a href="#">About Us</a></li>
-								<li><a href="#">Contact Us</a></li>
-								<li><a href="#">Country List</a></li>
-								<li><a href="#">News</a></li>
-								<li><a href="#">Blog</a></li>
-							</ul>
-						</div>
 					</div>
 				</div>
 			</div>
