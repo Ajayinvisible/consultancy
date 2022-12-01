@@ -1531,7 +1531,16 @@ footer .footer-links li a:hover{
 		margin-top: 40px;
 		z-index: 9;
 	}
+	.slick-next{
+		right: 15px;
+	}
+	.slick-prev{
+		left: 15px;
+	}
 	.quotes{
+		display: block;
+	}
+	.mt-4,.mt-5 {
 		display: block;
 	}
 	.quotes-slide{
@@ -1599,6 +1608,9 @@ footer .footer-links li a:hover{
 		margin-right: 10px;
 		padding: 0;
 	}
+	.contact-us .box form .last{
+		margin: 15px 0 0 15px
+	}
 	.news .box .news-content{
 		width: 100%;
 	}
@@ -1665,6 +1677,9 @@ footer .footer-links li a:hover{
     }
 	header{
 		display: none;
+	}
+	.blog .box .post-date .blog-title a h4{
+		width: 100%;
 	}
 	.mob-search{
 		display: none;
@@ -1734,6 +1749,12 @@ footer .footer-links li a:hover{
 	.fear .slick-prev{
 		left: 0;
 	}
+	.slick-next{
+		right: 10px;
+	}
+	.slick-prev{
+        left: 10px;
+    }
 	.articles-content img,.events-content img{
 		height: 116px;
 	}
@@ -1765,8 +1786,27 @@ footer .footer-links li a:hover{
 	.fixed-top{
 		width: 1024px;
 	}
+	.blog-inner .table-of-content ul li{
+		width: 190px;
+	}
+	.consultanyc-list .search-filter button{
+		width: 15%;
+	}
 	.navbar .navbar-nav .nav-link{
 		font-size: 12px;
+	}
+	.top-news .side-news{
+		height: 195px;
+	}
+	.top-news .side-news .side-image .post-date {
+		font-size: 16px;
+		bottom: 52px;
+	}
+	.top-news .main-news{
+		height: 411px;
+	}
+	.contact-us .box form .last{
+		margin: 15px 0 0 18px
 	}
 	.live-count .mob-ad{
 		display: none;
@@ -1803,6 +1843,9 @@ footer .footer-links li a:hover{
 	}
 	.articles-content img,.events-content img{
 		height: 116px;
+	}
+	.blog .box .post-date .blog-title a h4{
+		width: 250px;
 	}
 }
 @media (min-width: 1025px) and (max-width: 1400px){
